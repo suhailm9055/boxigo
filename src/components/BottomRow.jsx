@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import IconAndText from "./IconAndText";
 import Icons from "./icons";
 import Checkbox from "./Checkbox";
-import Button from "./Button";
+import ButtonComponent from "./ButtonComponent";
+import Footer from "./Footer";
 
 const BottomRow = () => {
   const [isFlexible, setIsFlexible] = useState(false);
   return (
+    <>
     <div className="BottomRow">
       <div className="Type">
         <IconAndText text="2 BHK" icon="HomeRoundedIcon" />
@@ -29,10 +31,13 @@ const BottomRow = () => {
         />
       </div>
       <div className="DetailsButtons">
-        <Button type="outLined" title="View More Details"/>
-        <Button type="filled" title={"Qoutes Awaiting"}/>
+        <ButtonComponent type="outlined" title="View Move Details"/>
+        <ButtonComponent type="contained" title={"Qoutes Awaiting"}/>
       </div>
     </div>
+    <Footer />
+    </>
+
   );
 };
 

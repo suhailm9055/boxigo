@@ -3,7 +3,7 @@ import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOu
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import DateRangeRoundedIcon from '@mui/icons-material/DateRangeRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-
+import ReportProblemRoundedIcon from '@mui/icons-material/ReportProblemRounded';
 
 const Icons = ({name,isBlack}) => {
   return (
@@ -12,6 +12,7 @@ const Icons = ({name,isBlack}) => {
        {name=="HomeRoundedIcon" && <HomeRoundedIcon/>}
        {name=="DateRangeRoundedIcon" && <DateRangeRoundedIcon/>}
        {name=="EditRoundedIcon" && <EditRoundedIcon />}
+       {name=="ReportProblemRoundedIcon" && <ReportProblemRoundedIcon />}
     </div>
   )
 }

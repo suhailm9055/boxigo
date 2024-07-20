@@ -46,17 +46,15 @@ body {
 }
 
 .MyMoves {
-  font-weight: bold;
   height: 100%;
   width: 100%;
   padding: 0 10px;
+  margin: 40px 10px;
 }
 .MyMovesCard {
   height: 350px;
   width: 100%;
   padding: 0 10px;
-  background-color: gray;
-  border-bottom: 3px solid black;
 }
 
 .MyMovesCard .TopRow {
@@ -64,7 +62,6 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 50%;
-  border: 3px solid black;
 }
 
 .MyMovesCard .TopRow .From {
@@ -88,31 +85,41 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 30%;
-  border: 3px solid black;
 }
 
 .BottomRow .Type {
-  flex: 2;
+  flex: 1;
 } 
 .BottomRow .Packages {
-  flex: 2;
+  flex: 1;
 } 
 .BottomRow .Distance {
-  flex: 2;
+  flex: 1;
 } 
 .BottomRow .Date {
   display: flex;
   align-items: center;
-  gap :10px;
-  flex: 2;
+  gap :3px;
+  flex: 1;
 } 
 .BottomRow .IsFlexible {
-  flex: 2;
+  flex: 1;
 } 
 .BottomRow .DetailsButtons {
-  flex: 2;
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap :10px;
+
 } 
 
+/* .BottomRow .DetailsButtons .myButton{
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+
+} */
 
 .IconAndText{
   display: flex;
@@ -141,4 +148,11 @@ align-items: center;
   height: 15px;
   width: 15px;
   border-radius: 5px ;
+}
+
+
+.footer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
