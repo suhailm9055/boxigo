@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.Sidebar {
+  height: 100%;
+  width: 200px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.SidebarList {
+  height: 100%;
+  width: fit-content;
+  padding: 0 10px;
+
+  position: fixed;
+}
+
+.SidebarList .row {
+  position: relative;
+
+  margin: 10px;
+  width: fit-content;
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  border-left: 5px solid white;
+  &.selected {
+    border-left: 5px solid #ff5722;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.MyMoves {
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+}
+.MyMovesCard {
+  height: 350px;
+  width: 100%;
+  padding: 0 10px;
+  background-color: gray;
+  border-bottom: 3px solid black;
+}
+
+.MyMovesCard .TopRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  border: 3px solid black;
+}
+
+.MyMovesCard .TopRow .From {
+  flex: 3;
+}
+.MyMovesCard .TopRow .Arrow {
+  flex: 1;
+}
+.MyMovesCard .TopRow .To {
+  flex: 3;
+}
+.MyMovesCard .TopRow .reqId {
+  flex: 1;
+}
+.MyMovesCard .TopRow .reqId p {
+  color: #ff5722;
+}
+
+.MyMovesCard .BottomRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  border: 3px solid black;
+}
+
+.BottomRow .Type {
+  flex: 2;
+} 
+.BottomRow .Packages {
+  flex: 2;
+} 
+.BottomRow .Distance {
+  flex: 2;
+} 
+.BottomRow .Date {
+  display: flex;
+  align-items: center;
+  gap :10px;
+  flex: 2;
+} 
+.BottomRow .IsFlexible {
+  flex: 2;
+} 
+.BottomRow .DetailsButtons {
+  flex: 2;
+} 
+
+
+.IconAndText{
+  display: flex;
+align-items: center;
+/* justify-content: center; */
+}
+
+.icons {
+  color: #ff5722;
+  &.black{
+    color: black;
+  }
+}
+
+
+
+.Direction {
+  font-weight: bold;
+}
+.Location {
+  font-weight: normal;
+}
+
+
+.Checkbox input[type="checkbox"]{
+  height: 15px;
+  width: 15px;
+  border-radius: 5px ;
+}
