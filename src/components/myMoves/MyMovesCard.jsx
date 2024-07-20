@@ -3,16 +3,17 @@ import TopRow from "./TopRow"
 import BottomRow from "./BottomRow"
 import MoveDetailsContainer from './moveDetails/MoveDetailsContainer'
 
-const MyMovesCard = () => {
+const MyMovesCard = ({data}) => {
 
-  const [showMoveDetails,setShowMoveDetails] = useState(true)
+  const [showMoveDetails,setShowMoveDetails] = useState(false)
+
   return (
     
     <div className='MyMovesCard'>
         
-        <TopRow/>
-        <BottomRow setShowMoveDetails={setShowMoveDetails}/>
-       {showMoveDetails &&  <MoveDetailsContainer  />}
+        <TopRow data={data}/>
+        <BottomRow setShowMoveDetails={setShowMoveDetails} data={data}/>
+       {showMoveDetails &&  <MoveDetailsContainer data={data} />}
       <hr/>
 
     </div>

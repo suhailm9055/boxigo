@@ -2,12 +2,12 @@ import React from 'react'
 import InventoryDetails from './InventoryDetails'
 import HouseDetails from './HouseDetails'
 
-const MoveDetailsContainer = () => {
+const MoveDetailsContainer = ({data}) => {
   return (
     <div className='MoveDetailsContainer'>
 
-        <InventoryDetails/>
-        <HouseDetails/>
+        <InventoryDetails inventory={data?.items?.inventory}/>
+        <HouseDetails data={data}/>
     </div>
   )
 }

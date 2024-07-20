@@ -18,7 +18,6 @@ const ItemCount = ({ category, key }) => {
 
 
 
-  console.log("availableItems", availableItems);
   return (
     <>
       {availableItems?.map((item, ind) => {

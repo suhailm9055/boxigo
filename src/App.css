@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'calibri';
 }
 
 .App {
@@ -38,23 +38,21 @@ body {
   gap: 20px;
   border-left: 5px solid white;
   &.selected {
-    border-left: 5px solid #EE4700;
+    border-left: 5px solid #ee4700;
   }
   &:hover {
     cursor: pointer;
   }
 }
 
-.MyMoves .title{
+.MyMoves .title {
   width: 100%;
   /* position: fixed; */
   background-color: #fff;
   padding-top: 25px;
   margin-bottom: 15px;
   padding-left: 10px;
-
 }
-
 
 .MyMoves {
   height: 100%;
@@ -63,13 +61,9 @@ body {
   /* margin: 40px 10px; */
 }
 .MyMovesCard {
- 
   width: 100%;
   padding: 10px 10px;
-
-
 }
-
 
 .MyMovesCard .TopRow {
   display: flex;
@@ -91,7 +85,7 @@ body {
   flex: 1;
 }
 .MyMovesCard .TopRow .reqId p {
-  color: #EE4700;
+  color: #ee4700;
 }
 
 .MyMovesCard .BottomRow {
@@ -99,35 +93,33 @@ body {
   justify-content: space-around;
   align-items: center;
   /* height: 50px; */
-
 }
 
 .BottomRow .Type {
   flex: 1;
-} 
+}
 .BottomRow .Packages {
   flex: 1;
-} 
+}
 .BottomRow .Distance {
   flex: 1;
-} 
+}
 .BottomRow .Date {
   display: flex;
   align-items: center;
-  gap :3px;
-  flex: 1;
-} 
+  gap: 3px;
+  flex: 3;
+}
 .BottomRow .IsFlexible {
   flex: 1;
-} 
+}
 .BottomRow .DetailsButtons {
   flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap :10px;
-
-} 
+  gap: 10px;
+}
 
 /* .BottomRow .DetailsButtons .myButton{
   background-color: #ff5722;
@@ -136,20 +128,23 @@ body {
 
 } */
 
-.IconAndText{
+.IconAndText {
   display: flex;
-align-items: center;
-gap: 5px;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+}
+.IconAndText h4{
+  
+  font-weight: normal;
 }
 
 .icons {
-  color: #EE4700;
-  &.black{
+  color: #ee4700;
+  &.black {
     color: black;
   }
 }
-
-
 
 .Direction {
   font-weight: bold;
@@ -158,43 +153,111 @@ gap: 5px;
   font-weight: normal;
 }
 
-
-.Checkbox input[type="checkbox"]{
+.Checkbox input[type="checkbox"] {
   height: 15px;
   width: 15px;
-  border-radius: 5px ;
+  border-radius: 5px;
 }
 
-
-.footer{
+.footer {
   display: flex;
   align-items: center;
   gap: 10px;
   height: 10px;
-
 }
-.type{
+.type {
   margin-right: 30px;
-
 }
 
-.RoomDropDown{
+.RoomDropDown {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px; 
+  grid-gap: 10px;
   padding: 10px;
 }
 
-
-
-.ItemCountContainer{
+.ItemCountContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.itemNames {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.RoomTypesContainer .heading {
+  display: flex;
+  margin: 30px 0;
+  gap: 10px;
+  align-items: center;
+}
+
+.RoomTypes{
+flex:10;
+  display: flex;
+  align-items: center;
+  height :30px;
+  gap:10px;
+  
+}
+.RoomTypes span{
+  color: #ee4700;
+}
+.HouseDetailsCard span{
+  color: #ee4700;
+}
+
+.iconArrow{
+  flex: 1;
+}
+.itemCount{
+  font-size: small;
+
+}
+.itemCountDiv{
+  width:30px;
+  height:20px;
+  background-color: #ee4700;
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: small;
+}
+
+.RoomTypesWithArrow{
+  display: flex;
+align-items: center;
+width: 95%;
+justify-content: space-evenly;
+  background-color: #E8E8E8;
+  padding: 15px 20px;
+margin-bottom: 10px;
+
 
 }
 
-.itemNames{
+.Loading{
 
-  display: flex;
-      flex-direction: column;
+  display: grid;
+  place-items: center;
+}
+
+
+.HouseDetailsCard .DoubleText{
+  min-height: 50px;
+}
+.HouseDetailsCard .Texts{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  padding: 20px;
+  font-size: small;
+}
+
+.DoubleText .value{
+  font-weight: normal;
 }

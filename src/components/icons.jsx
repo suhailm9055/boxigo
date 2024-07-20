@@ -4,6 +4,11 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import DateRangeRoundedIcon from '@mui/icons-material/DateRangeRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 import ReportProblemRoundedIcon from '@mui/icons-material/ReportProblemRounded';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
+import WidgetsIcon from '@mui/icons-material/Widgets';
+import PlaceIcon from '@mui/icons-material/Place';
 
 const Icons = ({name,isBlack}) => {
   return (
@@ -13,6 +18,11 @@ const Icons = ({name,isBlack}) => {
        {name=="DateRangeRoundedIcon" && <DateRangeRoundedIcon/>}
        {name=="EditRoundedIcon" && <EditRoundedIcon />}
        {name=="ReportProblemRoundedIcon" && <ReportProblemRoundedIcon />}
+       {name=="KeyboardArrowUpIcon" && <KeyboardArrowUpIcon />}
+       {name=="KeyboardArrowDownIcon" && <KeyboardArrowDownIcon />}
+       {name=="HourglassTopIcon" && <HourglassTopIcon />}
+       {name=="WidgetsIcon" && <WidgetsIcon />}
+       {name=="PlaceIcon" && <PlaceIcon />}
     </div>
   )
 }

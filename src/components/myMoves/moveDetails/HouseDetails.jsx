@@ -1,8 +1,21 @@
 import React from 'react'
+import DetailsHeading from './DetailsHeading'
+import HouseDetailsCard from './HouseDetailsCard'
 
-const HouseDetails = () => {
+const HouseDetails = ({data}) => {
+  
   return (
-    <div>HouseDetails</div>
+    <>
+    <div className="RoomTypesContainer">
+      <DetailsHeading
+        heading={"House Details"}
+        buttonTitle="Edit House Details"
+        buttonType="contained"
+        buttonColor="black"
+      />
+    <HouseDetailsCard data={data}/>
+    </div>
+  </>
   )
 }
 

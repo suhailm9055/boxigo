@@ -21,20 +21,37 @@ const theme = createTheme({
       contrastText:
         getContrastRatio(orangeMain, "#fff") > 4.5 ? "#fff" : "#111",
     },
+    black: {
+      main: "#000",
+      light: alpha("#000", 0.5),
+      dark: alpha("#000", 0.9),
+      contrastText:
+        getContrastRatio("#000", "#fff") > 4.5 ? "#fff" : "#111",
+    },
   },
 });
 
-const ButtonComponent = ({ title, type, setShowMoveDetails }) => {
+const ButtonComponent = ({
+  title,
+  type,
+  setShowMoveDetails,
+  color = "orange",
+  bold = false,
+}) => {
   return (
     <ThemeProvider theme={theme}>
       <Stack direction="row" spacing={2}>
         <Button
-          color="orange"
+          color={color}
           variant={type}
           onClick={() => {
             setShowMoveDetails((prev) => !prev);
           }}
-          sx={{ color: type == "outlined" ? orangeBase : "#fff" ,textTransform: 'none'}}
+          sx={{
+            color: type == "outlined" ? orangeBase : "#fff",
+            textTransform: "none",
+            fontWeight: bold ? "bold" : "normal",
+          }}
         >
           {title}
         </Button>
