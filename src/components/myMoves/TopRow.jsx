@@ -1,6 +1,6 @@
 import React from "react";
-import Address from "./Address";
-import Icons from "./icons";
+import Address from "../Address";
+import Icons from "../icons";
 
 const TopRow = () => {
   return (

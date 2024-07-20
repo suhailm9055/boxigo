@@ -38,30 +38,44 @@ body {
   gap: 20px;
   border-left: 5px solid white;
   &.selected {
-    border-left: 5px solid #ff5722;
+    border-left: 5px solid #EE4700;
   }
   &:hover {
     cursor: pointer;
   }
 }
 
+.MyMoves .title{
+  width: 100%;
+  /* position: fixed; */
+  background-color: #fff;
+  padding-top: 25px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+
+}
+
+
 .MyMoves {
   height: 100%;
   width: 100%;
   padding: 0 10px;
-  margin: 40px 10px;
+  /* margin: 40px 10px; */
 }
 .MyMovesCard {
-  height: 350px;
+ 
   width: 100%;
-  padding: 0 10px;
+  padding: 10px 10px;
+
+
 }
+
 
 .MyMovesCard .TopRow {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50%;
+  /* height: 60%; */
 }
 
 .MyMovesCard .TopRow .From {
@@ -77,14 +91,15 @@ body {
   flex: 1;
 }
 .MyMovesCard .TopRow .reqId p {
-  color: #ff5722;
+  color: #EE4700;
 }
 
 .MyMovesCard .BottomRow {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 30%;
+  /* height: 50px; */
+
 }
 
 .BottomRow .Type {
@@ -124,11 +139,11 @@ body {
 .IconAndText{
   display: flex;
 align-items: center;
-/* justify-content: center; */
+gap: 5px;
 }
 
 .icons {
-  color: #ff5722;
+  color: #EE4700;
   &.black{
     color: black;
   }
@@ -155,4 +170,31 @@ align-items: center;
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 10px;
+
+}
+.type{
+  margin-right: 30px;
+
+}
+
+.RoomDropDown{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; 
+  padding: 10px;
+}
+
+
+
+.ItemCountContainer{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.itemNames{
+
+  display: flex;
+      flex-direction: column;
 }

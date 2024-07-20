@@ -1,11 +1,13 @@
 import React from "react";
-import MyMovesCard from "../../components/MyMovesCard";
+import MyMovesCard from "../../components/myMoves/MyMovesCard";
 
 const MyMoves = () => {
   return (
     <>
       <div className="MyMoves">
-        MyMoves
+      <div className="title">
+      <strong>My Moves</strong> 
+        </div>
         <MyMovesCard />
         <MyMovesCard />
         <MyMovesCard />

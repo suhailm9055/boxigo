@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import IconAndText from "./IconAndText";
-import Icons from "./icons";
-import Checkbox from "./Checkbox";
-import ButtonComponent from "./ButtonComponent";
-import Footer from "./Footer";
+import IconAndText from "../IconAndText";
+import Icons from "../icons";
+import Checkbox from "../Checkbox";
+import ButtonComponent from "../ButtonComponent";
+import Footer from "../Footer";
 
-const BottomRow = () => {
+const BottomRow = ({setShowMoveDetails}) => {
   const [isFlexible, setIsFlexible] = useState(false);
   return (
     <>
@@ -31,7 +31,7 @@ const BottomRow = () => {
         />
       </div>
       <div className="DetailsButtons">
-        <ButtonComponent type="outlined" title="View Move Details"/>
+      <ButtonComponent type="outlined" title="View Move Details" setShowMoveDetails={setShowMoveDetails}/>
         <ButtonComponent type="contained" title={"Qoutes Awaiting"}/>
       </div>
     </div>

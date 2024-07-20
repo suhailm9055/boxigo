@@ -9,7 +9,7 @@ const Checkbox = ({ isFlexible,setIsFlexible, text }) => {
         onChange={()=>setIsFlexible(pre=>!pre)}
         name={text}
       />
-      <label for={text}> {text}</label><br></br>
+      <label> {text}</label><br></br>
     </div>
   );
 };
