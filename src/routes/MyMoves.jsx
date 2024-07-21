@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import MyMovesCard from "../components/myMoves/MyMovesCard";
-import Icons from "../components/icons";
+import CircularIndeterminate from "../components/Loader"
+
+
+
+
+
 
 const MyMoves = () => {
   const [data, setData] = useState(null);
@@ -40,7 +45,7 @@ if(error){
 
         {loading ? (
           <div className="Loading">
-            <Icons name="HourglassTopIcon" />
+            <CircularIndeterminate/>
           </div>
         ) : (
           (data["Customer_Estimate_Flow"] || [])?.map((item, ind) => (
