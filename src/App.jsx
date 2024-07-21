@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import SideBar from './components/SideBar'
-import MyMoves from './routes/myMoves/MyMoves'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +11,8 @@ function App() {
     <div className="App" >
 
     <SideBar />
-    <MyMoves/>
+    
+   <Outlet/>
     </div>
      
     </>

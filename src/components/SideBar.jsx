@@ -4,6 +4,7 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import PersonIcon from "@mui/icons-material/Person";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { Link } from "react-router-dom";
 
 const iconsRenderer = (icon) => {
   switch (icon) {
@@ -31,6 +32,7 @@ const SideBar = () => {
       <ul className="SidebarList ">
         {sideBarData.map((item, index) => {
           return (
+            <Link to={`${item?.link}`}>
             <li
               key={index}
               className={(selected == item?.title ? "row selected" : "row")}
@@ -39,6 +41,8 @@ const SideBar = () => {
               <div>{iconsRenderer(item?.icon)}</div>
               <div>{item?.title}</div>
             </li>
+            </Link>
+
           );
         })}
       </ul>

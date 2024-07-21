@@ -4,28 +4,28 @@ export const sideBarData = [
     title: "MY MOVES",
     icon : "LocalShippingIcon",
 
-    link:"/mymoves"
+    link:"mymoves"
 }
 ,
 {
     title: "MY PROFILE",
     icon : "PersonIcon",
 
-    link:"/myprofile"
+    link:"myprofile"
 }
 ,
 {
     title: "GET QOUTE",
     icon : "ReceiptLongIcon",
 
-    link:"/getqoute"
+    link:"getqoute"
 }
 ,
 {
     title: "LOGOUT",
     icon : "LogoutIcon",
 
-    link:"/logout"
+    link:"logout"
 }
 
 ]

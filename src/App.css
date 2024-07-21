@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'calibri';
+  font-family: "calibri";
 }
 
 .App {
@@ -45,9 +45,12 @@ body {
   }
 }
 
+.MyMoves .cards {
+  margin-top: 50px;
+}
 .MyMoves .title {
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   background-color: #fff;
   padding-top: 25px;
   margin-bottom: 15px;
@@ -134,8 +137,7 @@ body {
   gap: 5px;
   font-weight: normal;
 }
-.IconAndText h4{
-  
+.IconAndText h4 {
   font-weight: normal;
 }
 
@@ -186,7 +188,6 @@ body {
   flex-direction: column;
 }
 
-
 .RoomTypesContainer .heading {
   display: flex;
   margin: 30px 0;
@@ -194,31 +195,29 @@ body {
   align-items: center;
 }
 
-.RoomTypes{
-flex:10;
+.RoomTypes {
+  flex: 10;
   display: flex;
   align-items: center;
-  height :30px;
-  gap:10px;
-  
+  height: 30px;
+  gap: 10px;
 }
-.RoomTypes span{
+.RoomTypes span {
   color: #ee4700;
 }
-.HouseDetailsCard span{
+.HouseDetailsCard span {
   color: #ee4700;
 }
 
-.iconArrow{
+.iconArrow {
   flex: 1;
 }
-.itemCount{
+.itemCount {
   font-size: small;
-
 }
-.itemCountDiv{
-  width:30px;
-  height:20px;
+.itemCountDiv {
+  width: 30px;
+  height: 20px;
   background-color: #ee4700;
   border-radius: 40%;
   display: flex;
@@ -228,29 +227,25 @@ flex:10;
   font-size: small;
 }
 
-.RoomTypesWithArrow{
+.RoomTypesWithArrow {
   display: flex;
-align-items: center;
-width: 95%;
-justify-content: space-evenly;
-  background-color: #E8E8E8;
+  align-items: center;
+  width: 95%;
+  justify-content: space-evenly;
+  background-color: #e8e8e8;
   padding: 15px 20px;
-margin-bottom: 10px;
-
-
+  margin-bottom: 10px;
 }
 
-.Loading{
-
+.Loading {
   display: grid;
   place-items: center;
 }
 
-
-.HouseDetailsCard .DoubleText{
+.HouseDetailsCard .DoubleText {
   min-height: 50px;
 }
-.HouseDetailsCard .Texts{
+.HouseDetailsCard .Texts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
@@ -258,6 +253,24 @@ margin-bottom: 10px;
   font-size: small;
 }
 
-.DoubleText .value{
+.DoubleText .value {
   font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.ErrorContainer {
+  padding: 30px;
+  color: #ee4700;
 }
