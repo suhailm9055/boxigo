@@ -7,7 +7,7 @@ import Footer from "../Footer";
 import {formatDate} from "../../utils/dateFormat"
 
 const BottomRow = ({setShowMoveDetails,data}) => {
-  const [isFlexible, setIsFlexible] = useState(data?.move_date_flexible);
+  const [isFlexible, setIsFlexible] = useState(data?.move_date_flexible );
   return (
     <>
     <div className="BottomRow">
@@ -26,7 +26,7 @@ const BottomRow = ({setShowMoveDetails,data}) => {
       </div>
       <div className="IsFlexible">
         <Checkbox
-          isFlexible={isFlexible==0?false:true}
+          isFlexible={isFlexible}
           setIsFlexible={setIsFlexible}
           text="Is flexible"
         />

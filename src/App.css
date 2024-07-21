@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "calibri";
+  font-family: 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .App {
@@ -14,7 +15,7 @@ body {
   height: 100%;
   width: 200px;
   padding: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .SidebarList {
@@ -71,7 +72,8 @@ body {
 .MyMovesCard .TopRow {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  font-size: 15px;
   /* height: 60%; */
 }
 
@@ -95,6 +97,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: medium;
   /* height: 50px; */
 }
 
@@ -161,11 +164,17 @@ body {
   border-radius: 5px;
 }
 
+.footer .icons svg{
+  font-size: large;
+}
+
 .footer {
   display: flex;
   align-items: center;
   gap: 10px;
   height: 10px;
+  font-size: small;
+
 }
 .type {
   margin-right: 30px;
@@ -227,6 +236,27 @@ body {
   font-size: small;
 }
 
+.Checkbox{
+  display: flex;
+  gap: 5px;
+}
+
+.checkboxContainer {
+  width: 15px;
+  height: 15px;
+  background-color: #cfcfcf;
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  cursor: pointer;
+&.true{
+  background-color: #ee4700;
+  color: white;
+
+}
+}
 .RoomTypesWithArrow {
   display: flex;
   align-items: center;
@@ -274,3 +304,7 @@ a:hover {
   padding: 30px;
   color: #ee4700;
 }
+
+
+
+
