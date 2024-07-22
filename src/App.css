@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -144,8 +144,16 @@ body {
   font-weight: normal;
 }
 
+.Arrow .icons {
+  height: 40px;
+}
+.Arrow .icons  svg{
+  font-size: 35px ;
+}
 .icons {
   color: #ee4700;
+  
+
   &.black {
     color: black;
   }
@@ -153,6 +161,7 @@ body {
 
 .Direction {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .Location {
   font-weight: normal;
@@ -164,7 +173,7 @@ body {
   border-radius: 5px;
 }
 
-.footer .icons svg{
+.footer .icons svg {
   font-size: large;
 }
 
@@ -174,7 +183,6 @@ body {
   gap: 10px;
   height: 10px;
   font-size: small;
-
 }
 .type {
   margin-right: 30px;
@@ -236,7 +244,7 @@ body {
   font-size: small;
 }
 
-.Checkbox{
+.Checkbox {
   display: flex;
   gap: 5px;
 }
@@ -251,11 +259,10 @@ body {
   justify-content: center;
   font-size: small;
   cursor: pointer;
-&.true{
-  background-color: #ee4700;
-  color: white;
-
-}
+  &.true {
+    background-color: #ee4700;
+    color: white;
+  }
 }
 .RoomTypesWithArrow {
   display: flex;
@@ -304,7 +311,3 @@ a:hover {
   padding: 30px;
   color: #ee4700;
 }
-
-
-
-
