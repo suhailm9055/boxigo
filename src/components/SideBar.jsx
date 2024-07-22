@@ -39,7 +39,7 @@ const SideBar = () => {
             onClick={()=>setSelected(item?.title)}
             >
               <div>{iconsRenderer(item?.icon)}</div>
-              <div>{item?.title}</div>
+              <div> <strong>{item?.title}</strong> </div>
             </li>
             </Link>
 
